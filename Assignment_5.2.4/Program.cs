@@ -1,9 +1,13 @@
 ﻿//Assignment 5.2.4
 //Write a program in C# Sharp to check whether a given string is Palindrome or not using recursion.
 
-string input = "RADAR";
+Console.WriteLine("Enter a string to check if it is a palindrome: ");
+string input = Console.ReadLine();
 
-Console.WriteLine(IsPalRecursive(input, 0, input.Length - 1));
+bool result = IsPalRecursive(input, 0, input.Length - 1);
+
+Console.WriteLine($"{input} a palindrome? {result}");
+
 
 bool IsPalRecursive(string s, int left, int right)
 {
