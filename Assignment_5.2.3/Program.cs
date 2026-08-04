@@ -4,9 +4,9 @@
 Console.WriteLine("Enter a number:");
 int num = Convert.ToInt32(Console.ReadLine());
 
-RecursivePrint(num);
+RecursivePrintDesc(num);
 
-void RecursivePrint(int n)
+void RecursivePrintDesc(int n)
 {
     if (n == 0)
     {
@@ -14,6 +14,6 @@ void RecursivePrint(int n)
     }
 
     Console.Write(n + " ");
-    RecursivePrint(n - 1);
+    RecursivePrintDesc(n - 1);
 
 }
