@@ -1,8 +1,11 @@
 ﻿//Assignment 5.2.2
 //Write a program in C# Sharp to print the first n natural number using recursion.
 
-RecursivePrint(10);
-void RecursivePrint(int n)
+Console.WriteLine("Enter a number:");
+int num = Convert.ToInt32(Console.ReadLine());
+
+RecursivePrintAsc(num);
+void RecursivePrintAsc(int n)
 {
     if (n == 0)
     {
@@ -10,7 +13,7 @@ void RecursivePrint(int n)
     }
 
     
-    RecursivePrint(n - 1);
+    RecursivePrintAsc(n - 1);
 
     Console.Write(n + " ");
 
