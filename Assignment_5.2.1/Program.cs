@@ -25,31 +25,3 @@ int LastWordLength(string s)
 }
 
 
-
-
-
-
-
-//int LastWordLength(string s)
-//{
-//    int length = 0;
-
-//    for (int i = s.Length - 1; i >= 0; i--)
-//    {
-//        if (s[i] == ' ')
-//        {
-//            // Ignore spaces until we start counting the last word
-//            if (length == 0)
-//            {
-//                continue;
-//            }
-
-//            // We already counted the last word
-//            break;
-//        }
-
-//        length++;
-//    }
-
-//    return length;
-//}
